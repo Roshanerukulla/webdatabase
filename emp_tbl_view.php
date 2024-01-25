@@ -20,7 +20,6 @@ $result = mysqli_query($conn, $sql1);
 if (mysqli_num_rows($result) > 0) {
 	    // output data of each row
 	    while($row = mysqli_fetch_assoc($result)) {
-	    	//$price_tax = ( $price * $tax) + $price;
 			$html = $html."<tr><td>".$row['id']."</td><td>".$row['jobTitle']."</td><td>".$row['jobDescription']."</td><td>".$row['department']."</td>
             <td>".$row['requiredSkills']."</td><td>".$row['hourlyRate']."</td><td>".$row['applicationInstructions']."</td><td>".$row['contacInfo']."</td>
             <td>".$row['status']."</td></tr>";
