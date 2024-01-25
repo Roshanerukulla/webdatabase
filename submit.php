@@ -4,8 +4,8 @@ $row = mysqli_fetch_assoc($result);
 $newid = $row['id'] + 1;
 
 
-$sql2 = "INSERT INTO formtest2 (id, jobTitle, jobDescription, department, requiredSkills, hourlyRate,applicationInstructions, contactInfo, status)
-VALUES ('".$newid."', '".$fname."', '".$lname."', '".$email."')";
+$sql2 = "INSERT INTO formtest2 (id, jobTitle, jobDescription, department, requiredSkills, hourlyRate, applicationInstructions, contactInfo, status)
+VALUES ('".$id."', '".$jobTitle."', '".$jobDescription."', '".$department."', '".$requiredSkills."', '".$hourlyRate."', '".$applicationInstructions."', '".$contactInfo."', '".$status."')";
 
 if (mysqli_query($conn, $sql2)) {
     echo "New record created successfully";
