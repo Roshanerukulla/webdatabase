@@ -14,7 +14,7 @@ $html = "<html><table style='width:100%' border='1px solid black'><tr>
   </tr>";
 
 // get id
-$sql1 = "SELECT id, jobTitle, jobDescription, department, requiredSkills, hourlyRate,applicationInstructions, contactInfo, status FROM jobposted WHERE status='open'";
+$sql1 = "SELECT id, jobTitle, jobDescription, department, requiredSkills, hourlyRate,applicationInstructions, contactInfo FROM jobposted WHERE status='open'";
 $result = mysqli_query($conn, $sql1);
 
 if (mysqli_num_rows($result) > 0) {

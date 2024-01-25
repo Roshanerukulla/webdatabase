@@ -1,23 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <title> LOGIN PAGE </title>
-   </head>
-   <body>
-    <form action="emp_tbl_view.php", method="post">
+<head>
+    <title>Login Page</title>
+</head>
+<body>
+    <form action="emp_tbl_view.php" method="post">
         Username: <br>
         <input type="text" name="username"><br>
         Password: <br>
         <input type="password" name="password"><br>
-        <label for="ROLE">LOGIN AS</label>
-        <select name="LOGIN AS" >
-         <option value="faculty">EMPLOYEE</option>
-    <!-- <option value="saab">FACULTY</option> -->
-        <input type="submit" name="SUBMIT">
-
-</select>
-
-
+        <label for="role">Login As:</label>
+        <select name="role">
+            <option value="employee">Employee</option>
+            <option value="faculty">Faculty</option>
+        </select>
+        <br>
+        <input type="submit" name="submit">
     </form>
-   </body>
+
+    <form action="faculty.php" method="post">
+        Username: <br>
+        <input type="text" name="username"><br>
+        Password: <br>
+        <input type="password" name="password"><br>
+        <label for="role">Login As:</label>
+        <select name="role">
+            <option value="faculty">Faculty</option>
+            <option value="employee">Employee</option>
+        </select>
+        <br>
+        <input type="submit" name="submit">
+    </form>
+</body>
 </html>
