@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Close Position</title>
+</head>
+<body>
+    <h1>View all positions</h1>
+    <form action="fclty_tbl_view.php" method="post">
+        <button type="submit">View all</button>
+    </form>
+    <h1>Close Position</h1>
+    <form action="close_position.php" method="post">
+        <label for="position_id">Position ID:</label>
+        <input type="text" name="position_id" required>
+
+        <button type="submit">Close Position</button>
+    </form>
+</body>
+</html>
