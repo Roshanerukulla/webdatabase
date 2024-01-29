@@ -4,7 +4,7 @@
     <title>Login Page</title>
 </head>
 <body>
-    <form action="emp_tbl_view.php" method="post">
+    <form action="process_login.php" method="post">
         Username: <br>
         <input type="text" name="username"><br>
         Password: <br>
@@ -13,20 +13,6 @@
         <select name="role">
             <option value="employee">Employee</option>
             <option value="faculty">Faculty</option>
-        </select>
-        <br>
-        <input type="submit" name="submit">
-    </form>
-
-    <form action="faculty.php" method="post">
-        Username: <br>
-        <input type="text" name="username"><br>
-        Password: <br>
-        <input type="password" name="password"><br>
-        <label for="role">Login As:</label>
-        <select name="role">
-            <option value="faculty">Faculty</option>
-            <option value="employee">Employee</option>
         </select>
         <br>
         <input type="submit" name="submit">
