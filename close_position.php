@@ -12,7 +12,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $conn->query($sql);
 
     // Redirect to the view_positions page or another page
-    header("Location: emp_tbl_view.php");
+    header("Location: fclty_tbl_view.php");
     exit();
 }
 
