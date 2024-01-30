@@ -2,6 +2,18 @@
 <html lang="en">
 <head>
     <title>Login Page</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        form {
+            text-align: center;
+        }
+    </style>
 </head>
 <body>
     <form action="process_login.php" method="post">
@@ -9,6 +21,7 @@
         <input type="text" name="username"><br>
         Password: <br>
         <input type="password" name="password"><br>
+        <h4>If you're not a Faculty member, Select your role as Employee and Login (No need to enter Username and Password)</h4>
         <label for="role">Login As:</label>
         <select name="role">
             <option value="employee">Employee</option>
