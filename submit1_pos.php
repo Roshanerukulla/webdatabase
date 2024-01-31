@@ -2,7 +2,7 @@
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     include 'dbconnection.php';
 
-    // Get form data
+    // Getting data from 'forms_for_faculty.html'
     $jobTitle = $_POST['jobTitle'];
     $jobDescription = $_POST['jobDescription'];
     $department = $_POST['department'];
@@ -12,7 +12,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $contactInfo = $_POST['contactInfo'];
     $status = $_POST['status'];
 
-    // Insert data into the database
+    // Inserting data into the database
     $sql = "INSERT INTO jobposted (jobTitle, jobDescription, department, requiredSkills, hourlyRate, applicationInstructions, contactInfo, status) VALUES ('$jobTitle', '$jobDescription', '$department', '$requiredSkills', '$hourlyRate', '$applicationInstructions', '$contactInfo', '$status')";
 
     if (mysqli_query($conn, $sql)) {
@@ -24,6 +24,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     mysqli_close($conn);
 }
 
-// Close the database connection
+
 
 ?>

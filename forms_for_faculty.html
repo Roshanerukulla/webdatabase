@@ -1,9 +1,10 @@
-
-
 <!DOCTYPE html>
+
 <html lang="en">
+
 <head>
   <style>
+    /* Using some css functions to center our login page */
     body {
       display: flex;
       justify-content: center;
@@ -28,30 +29,44 @@
       justify-content: center;
     }
   </style>
+
 </head>
+
+
 <body>
   <div class="container">
+
     <div class="centered-div">
+      <!-- This div is for the form to be filled, so that a new position can be added -->
       <h1>Add a new position</h1>
+      
       <form action="submit1_pos.php" method="post">
+        <!-- Hitting the 'submit' button will instantiate 'submit1_pos.php' and input data can be stored on the Database -->
         Job Title:<br>
+
   <input type="text" name="jobTitle">
   <br>
+
   Job Description:<br>
   <input type="text" name="jobDescription">
   <br>
+
   Department:<br>
  <input type="text" name="department">
  <br>
+
   Required Skills:<br>
   <input type="text" name="requiredSkills" placeholder="List atleast 3 skills">
   <br>
+  
   Hourly rate:<br>
   <input type="text" name="hourlyRate" placeholder="Enter Numeric value only">
   <br>
+
   Application Instructions:<br>
   <input type="text" name="applicationInstructions">
   <br>
+
   Contact Information:<br>
   <input type="text" name="contactInfo" placeholder="email or phone no.">
   <br>
@@ -59,20 +74,34 @@
   <label for="status">Job Status:</label>
 
   <select name="status" >
+    <!-- Simple dropdown for choosing the job status, default value is 'open' -->
     <option value="open">Open</option>
     <option value="close">Close</option>
   </select>
+
   <br><br>
+
   <input type="submit" name="submit">
       </form>
+
     </div>
 
     <div class="centered-div">
+
+      <!-- This div is for accessing the html page of closing job openings -->
+
       <h2>Close an open position</h2>
+
       <form action="close_pos.html" method="post">
+
+        <!-- Hitting the 'open' button will open 'close_pos.html' page  -->
         <button type="submit">Open</button>
+
       </form>
+
     </div>
+
   </div>
+
 </body>
 </html>

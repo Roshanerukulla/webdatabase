@@ -6,6 +6,7 @@
     <title>Close Position</title>
 
     <style>
+        /* Using some css functions to center our page of closing job positions */
         body {
             display: flex;
             flex-direction: column;
@@ -15,10 +16,10 @@
             margin: 0;
         }
 
-        /* You can add more styles here as needed */
+        
 
         .input-box {
-            width: 480px; /* Set your desired width */
+            width: 480px; 
             padding: 10px;
             box-sizing: border-box;
         }
@@ -28,17 +29,26 @@
             margin-bottom: 20px;
         }
     </style>
+
 </head>
+
+
 <body>
+
     <h1>View all positions</h1>
+
     <form action="fclty_tbl_view.php" method="post">
+        <!-- This 'View all' button will help the faculty to know about the exact job id which they want to close -->
         <button type="submit">View all</button>
     </form>
+
     <h1>Close Position</h1>
     <form action="close_position.php" method="post">
         <label for="position_id">Position ID:</label>
+
         <input type="text" name="position_id" required class="input-box" placeholder="Enter the position id to close, Use the View all button to see open positions">
 
+        <!-- By entering the job id and hitting the 'Close Position' button the faculty gets redirected to the 'fclty_tbl_view' where they can see the updates -->
         <button type="submit">Close Position</button>
     </form>
 </body>
