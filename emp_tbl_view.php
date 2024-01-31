@@ -10,7 +10,7 @@ $html = "<html><table style='width:100%' border='1px solid black'><tr>
     <th>Hourly Rate</th>
     <th>Application Instructions</th>
     <th>Contact information</th>
-    <th>Status</th>
+    
   </tr>";
 
 // get id
