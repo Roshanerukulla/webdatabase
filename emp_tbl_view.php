@@ -31,7 +31,21 @@ if (mysqli_num_rows($result) > 0) {
 	
 	$html=$html."</table></html>";
 	echo $html;
-
+  
 mysqli_close($conn);
 
+
 ?>
+
+
+
+<html>
+
+<body>
+<form align="right" name="form1" method="post" action="login.html">
+<label>
+<input name="submit2" type="submit" id="submit2" value="log out">
+</label>
+</form>
+</body>
+</html>
