@@ -1,6 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
+<html>
+    <head>
+        <title>
+            Login page 
+        </title>
+    </head>
     <title>Login Page</title>
     <style>
         /* Using some css functions to center our login page */
@@ -11,26 +15,63 @@
             height: 100vh;
             margin: 0;
         }
+        h1 {
+           background-color: black;
+           font-size: x-large;
+           color: azure;
+        }
         form {
             text-align: center;
+            padding: 20px;
+            border: 1px solid black;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
+
+        input {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            box-sizing: border-box;
+        }
+
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            
+        }
+        button :hover {
+        color: red;
+        background-color: transparent;
+        text-decoration: underline;
+        }
+    
     </style>
 </head>
 <body>
-    <!--  Clicking the submit button after filling required details, the 'process_login.php' will be initiated  -->
+    
+
     <form action="process_login.php" method="post">
-        Username: <br>
-        <input type="text" name="username" required placeholder="Enter your username"><br>
-        Password: <br>
-        <input type="password" name="password" required placeholder="Password"><br>
-        <h4>If you're not a Faculty member, Select your role as Employee and Login (No need to enter Username and Password)</h4>
-        <label for="role">Login As:</label>
-        <select name="role">
-            <option value="employee">Employee</option>
+        <h1 >LOGIN PAGE</h1>
+        <label for="username" ><strong>Username:</strong></label>
+        <input type="text" id="username" name="username" required placeholder="enter your name">
+
+        <label for="password"><strong>Password</strong></label>
+        <input type="password" id="password" name="password" required placeholder="enter your password">
+
+        <label for="role">Login as:</label>
+        <select  name="role">
             <option value="faculty">Faculty</option>
-        </select>
-        <br>
-        <input type="submit" name="submit">
+            <option value="employee">Employee</option>
+        </select> 
+
+        <button type="submit">Login</button>
     </form>
+
+
 </body>
 </html>
